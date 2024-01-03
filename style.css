@@ -1,0 +1,111 @@
+body{
+    background-color: yellowgreen;
+    background-color: black;
+    margin: 0 300px;
+}
+.clock {
+    height: 320px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 30px 30px 35px rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+img {
+    opacity: 0.6;
+    background: red;
+    background: burlywood;
+    border-radius: 50%;
+    border: 2px solid purple;
+    transition: all .5s;
+    cursor: pointer;
+}
+img:hover{
+    background: red;
+    background: #00f7ff;
+}
+
+.hand {
+    position: absolute;;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    transform-origin: bottom;
+}
+.hour {
+    height: 60px;
+    width: 10px;
+    top: 100px;
+}
+.minute {
+    height: 80px;
+    width: 5px;
+    top: 80px;
+}
+.seconds {
+    height: 90px;
+    width: 3px;
+    top: 70px;
+}
+a {
+    font-family: sans-serif;
+    font-weight: 500;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+a > .fa {
+    color: #ff0000;
+    color: burlywood;
+}
+@media screen and (min-width: 451px) {
+    a {
+        font-size: 18px;
+        padding: 8px 12px 8px 12px;
+    }
+}
+@media screen and (max-width:450px) {
+    a {
+        font-size: 12px;
+        padding: 8px 12px 8px 12px;
+    }
+}
+
+.hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 60px;
+    background-color: black;
+    background-color: aquamarine;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 20px black;
+    text-shadow: 3px 2px 5px white;
+    letter-spacing: 1px;
+}
+
+.footer{
+    position: relative;
+    top: 350px;
+    left: 85px;
+    width: 400px;
+}
